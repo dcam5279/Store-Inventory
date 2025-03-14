@@ -62,5 +62,4 @@ _•  Display error messages for low inventory when adding and updating parts if
 
 
 
-
 ### **K.  Demonstrate professional communication in the content and presentation of your submission.**
