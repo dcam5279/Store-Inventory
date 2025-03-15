@@ -4,7 +4,7 @@
 
 _Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required._
 
-Updated the shop name title to be "The Lawnmower Shop" and products to "types of lawnmowers and lawn care products" and parts to "lawnmower parts and accessories".
+Updated the shop name title to be "The Lawnmower Shop" and products to "Types of lawnmowers and lawn care products" and parts to "Lawnmower parts and accessories".
 
 
 
