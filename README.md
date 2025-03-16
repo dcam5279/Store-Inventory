@@ -4,14 +4,15 @@
 
 _Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required._
 
-Updated the shop name title to be "The Lawnmower Shop" and products to "types of lawnmowers and lawn care products" and parts to "Lawnmower parts and accessories".
+* Updated the shop name title to be "The Lawnmower Shop" (line 14) and products to "types of lawnmowers and lawn care products" (line 54) and parts to "Lawnmower parts and accessories" (line 21).
 
 
 
 
 ### **D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.**
 
-
+* Created an about.html page for "The lawnmower Shop" that included visuals and styling of the page along with a mission statement and paragraph about the companies' mission. 
+* Created an about.java controller page that includes the @controller and @Getmapping for the about.html page. I ensured that the link for the home page worked to navigate from the about.html page to the mainscreen.html page. 
 
 
 ### **E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.**
