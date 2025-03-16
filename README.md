@@ -13,7 +13,7 @@ _Note: Do not remove any elements that were included in the screen. You may add 
 
 * Created an about.html page for "The lawnmower Shop" that included visuals and styling of the page along with a mission statement and paragraph about the companies' mission. 
 * Created an about.java controller page that includes the @controller and @Getmapping for the about.html page. I ensured that the link for the home page worked to navigate from the about.html page to the mainscreen.html page. 
-
+* Added navigation for home to about page on lines 18-21 of mainscreen.html. I ensured all navigation links work. 
 
 ### **E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.**
 
