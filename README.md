@@ -19,7 +19,11 @@ _Note: Do not remove any elements that were included in the screen. You may add 
 
 _Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part._
 
-
+* Created and if statement to make sure inventory is added only when the part (line 43) and product (line 117) are empty.
+* Added 5 parts and saved them to the repository in lines 44 to line 114
+* Line 88 and 89 created a list to search through parts
+* Added a loop in lines 91 through 110 that checks for parts names that equals the name that was assigned.
+* Created products and added them to the repository in lines 118 to 127. 
 
 
 ### **F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:**
