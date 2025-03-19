@@ -32,7 +32,10 @@ _•  The “Buy Now” button must be next to the buttons that update and delet
 • The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
 •  Display a message that indicates the success or failure of a purchase._
 
-
+* Added the buy now button to the mainscreen.html in lines 92-95.
+* Created the BuyNowController.java file.
+* Created the PurchaseSuccess.html and PurchaseError.html pages. 
+* I ensured that the buy now button works and subtracts from inventory and populates the purchase success or purchase error page. 
 
 
 
