@@ -137,6 +137,30 @@ public abstract class Part implements Serializable {
         return (int) (id ^ (id >>> 32));
     }
 
+
+    public String validateInventory() {
+
+        if (inv < minInv) {
+            return "Inventory is below the minimum allowed!";
+        }
+
+        if (inv > maxInv) {
+            return "Inventory exceeds the maximum allowed!";
+        }
+
+        return null;
+    }
+
+    public String validateInventoryOnProductUpdate() {
+        if (minInv != null && inv - 1 < minInv) {
+            return "Adding or updating a product will cause the inventory of this part to fall below the minimum allowed!";
+        }
+        return null;
+    }
+
+
+
+
     public boolean isInvValid() {
         return inv >= minInv && inv <= maxInv;
     }

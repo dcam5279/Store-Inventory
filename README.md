@@ -79,9 +79,17 @@ _•  Display error messages for low inventory when adding and updating parts if
 •  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
 •  Display error messages when adding and updating parts if the inventory is greater than the maximum._
 
+All work below was done on Part.java:
+* On lines 141-159 added a condition to validate that inventory is above the minimum and below the maximum allowed. If these values go below the minimum or below maximum an error message will populate. 
 
+All work below was done on AddInHousePartController.java:
+* On lines 52-57 added the validation method to the controller. 
 
+All work below was done on the AddOutsourcedPartController.java:
+* On lines 53-59 added the validation method to the controller. 
 
+All work below was done on the EnufPArtsValidator.java:
+* On lines 37-66, I added validation checks to ensure that part inventory does not fall below the minimum or exceed the maximum. If the inventory is outside the allowed range, an error message will populate. I also added a validator to ensure that updating products wouldn't cause parts to be outside the allowed range. If this happens, an error message will populate. 
 
 ### **I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.**
 

@@ -50,6 +50,15 @@ public class AddOutsourcedPartController {
                 return "OutsourcedPartForm";
             }
 
+            String validationMessage = part.validateInventory();
+
+            if (validationMessage != null) {
+
+                theModel.addAttribute("errorMessage", validationMessage);
+                return "OutsourcedPartForm";
+            }
+
+
         OutsourcedPartService repo=context.getBean(OutsourcedPartServiceImpl.class);
         OutsourcedPart op=repo.findById((int)part.getId());
         if(op!=null)part.setProducts(op.getProducts());

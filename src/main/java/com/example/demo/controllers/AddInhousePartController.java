@@ -49,6 +49,14 @@ public class AddInhousePartController{
                 return "InhousePartForm";
             }
 
+            String validationMessage = part.validateInventory();
+
+            if (validationMessage != null) {
+                theModel.addAttribute("errorMessage", validationMessage);
+                return "InhousePartForm";
+            }
+
+
         InhousePartService repo=context.getBean(InhousePartServiceImpl.class);
         InhousePart ip=repo.findById((int)part.getId());
         if(ip!=null)part.setProducts(ip.getProducts());
