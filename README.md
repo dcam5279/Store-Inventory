@@ -4,7 +4,7 @@
 
 _Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required._
 
-* Updated the shop name title to be "The Lawnmower Shop" (line 14) and products to "types of lawnmowers and lawn care products" (line 54) and parts to "Lawnmower parts and accessories" (line 21).
+* In the mainscreen.html I updated the shop name title to be "The Lawnmower Shop" (line 14) and products to "types of lawnmowers and lawn care products" (line 54) and parts to "Lawnmower parts and accessories" (line 21).
 
 
 
@@ -19,6 +19,7 @@ _Note: Do not remove any elements that were included in the screen. You may add 
 
 _Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part._
 
+All below work was done in the BootStrapData.java: 
 * Created and if statement to make sure inventory is added only when the part (line 43) and product (line 117) are empty.
 * Added 5 parts and saved them to the repository in lines 44 to line 114
 * Line 88 and 89 created a list to search through parts
@@ -28,7 +29,7 @@ _Note: Make sure the sample inventory is added only when both the part and produ
 
 ### **F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:**
 
-_•  The “Buy Now” button must be next to the buttons that update and delete products.
+•  The “Buy Now” button must be next to the buttons that update and delete products.
 • The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
 •  Display a message that indicates the success or failure of a purchase._
 
@@ -41,13 +42,34 @@ _•  The “Buy Now” button must be next to the buttons that update and delet
 
 ### **G.  Modify the parts to track maximum and minimum inventory by doing the following:**
 
-_•  Add additional fields to the part entity for maximum and minimum inventory.
+•  Add additional fields to the part entity for maximum and minimum inventory.
 •  Modify the sample inventory to include the maximum and minimum fields.
 •  Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
 •  Rename the file the persistent storage is saved to.
 •  Modify the code to enforce that the inventory is between or at the minimum and maximum value._
 
+All work below was in Part.java:
+* On lines 32-38 I created the error messages that inventory cannot be below 0. I initialized minInt and maxInt and mapped it to database.
+* On lines 50-51 and 59-60 created the constructors for minInt and maxInt.
+* On lines 95-109 created the getters and setters for min and max inventory. 
+* On lines 137-139 created boolean method to check validly of min and max inventory. 
 
+All work below was done in the BootStrapData.java:
+* On lines 50-51, 61-62, 72-73, 83-84, and 94-95 set min and maximum inventory for each part. 
+
+All work below was done in InhousePartForm.html:
+* On lines 24-28 I added the text inputs for minimum and maximum inventory.
+
+All work below was done on OutsourcedPartForm.html:
+* On lines 27-31 I added the text inputs for minimum and maximum inventory.
+
+All work below was done in the AddInHousePartController.java:
+* On lines 47-50 added the minimum and maximum fields to the controller with error message using the isInvValid method.
+
+All work below was done in the AddOutsourcedPartController.java:
+* On lines 48-51 added the minimum and maximum fields to the controller with error message using the isInvValid method.
+
+* Updated the database name in file explorer to The_Lawnmower_Shop and mapped it within the applications.properties file on line 6.
 
 
 
