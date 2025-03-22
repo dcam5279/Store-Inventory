@@ -102,7 +102,7 @@ All work below was done in PartsTest.java:
 
 ### **J.  Remove the class files for any unused validators in order to clean your code.**
 
-
+* The DeletePartValidator was the only validator that was unused so I deleted it from the project. 
 
 
 ### **K.  Demonstrate professional communication in the content and presentation of your submission.**
