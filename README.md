@@ -19,7 +19,7 @@ _Note: Do not remove any elements that were included in the screen. You may add 
 
 _Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part._
 
-All below work was done in the BootStrapData.java: 
+All below work was done in BootStrapData.java: 
 * Created and if statement to make sure inventory is added only when the part (line 43) and product (line 117) are empty.
 * Added 5 parts and saved them to the repository in lines 44 to line 114
 * Line 88 and 89 created a list to search through parts
@@ -48,25 +48,25 @@ All below work was done in the BootStrapData.java:
 •  Rename the file the persistent storage is saved to.
 •  Modify the code to enforce that the inventory is between or at the minimum and maximum value._
 
-All work below was in Part.java:
+All work below was done in Part.java:
 * On lines 32-38 I created the error messages that inventory cannot be below 0. I initialized minInt and maxInt and mapped it to database.
 * On lines 50-51 and 59-60 created the constructors for minInt and maxInt.
 * On lines 95-109 created the getters and setters for min and max inventory. 
 * On lines 137-139 created boolean method to check validly of min and max inventory. 
 
-All work below was done in the BootStrapData.java:
+All work below was done in BootStrapData.java:
 * On lines 50-51, 61-62, 72-73, 83-84, and 94-95 set min and maximum inventory for each part. 
 
 All work below was done in InhousePartForm.html:
 * On lines 24-28 I added the text inputs for minimum and maximum inventory.
 
-All work below was done on OutsourcedPartForm.html:
+All work below was done in OutsourcedPartForm.html:
 * On lines 27-31 I added the text inputs for minimum and maximum inventory.
 
-All work below was done in the AddInHousePartController.java:
+All work below was done in AddInHousePartController.java:
 * On lines 47-50 added the minimum and maximum fields to the controller with error message using the isInvValid method.
 
-All work below was done in the AddOutsourcedPartController.java:
+All work below was done in AddOutsourcedPartController.java:
 * On lines 48-51 added the minimum and maximum fields to the controller with error message using the isInvValid method.
 
 * Updated the database name in file explorer to The_Lawnmower_Shop and mapped it within the applications.properties file on line 6.
@@ -79,20 +79,23 @@ _•  Display error messages for low inventory when adding and updating parts if
 •  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
 •  Display error messages when adding and updating parts if the inventory is greater than the maximum._
 
-All work below was done on Part.java:
+All work below was done in Part.java:
 * On lines 141-159 added a condition to validate that inventory is above the minimum and below the maximum allowed. If these values go below the minimum or below maximum an error message will populate. 
 
-All work below was done on AddInHousePartController.java:
+All work below was done in AddInHousePartController.java:
 * On lines 52-57 added the validation method to the controller. 
 
-All work below was done on the AddOutsourcedPartController.java:
+All work below was done in AddOutsourcedPartController.java:
 * On lines 53-59 added the validation method to the controller. 
 
-All work below was done on the EnufPArtsValidator.java:
+All work below was done in EnufPArtsValidator.java:
 * On lines 37-66, I added validation checks to ensure that part inventory does not fall below the minimum or exceed the maximum. If the inventory is outside the allowed range, an error message will populate. I also added a validator to ensure that updating products wouldn't cause parts to be outside the allowed range. If this happens, an error message will populate. 
 
 ### **I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.**
 
+All work below was done in PartsTest.java:
+* On lines 160-167 created a test to ensure that the minimum inventory was set and retrieved correctly. 
+* On lines 169-176 created a test to ensure that the maximum inventory was set and retrieved correctly.
 
 
 
