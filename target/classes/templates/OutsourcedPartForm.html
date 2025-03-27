@@ -30,6 +30,8 @@
     <p><input type="text" th:field="*{maxInv}" placeholder="Maximum Inventory" class="form-control mb-4 col-4"/></p>
     <p th:if="${#fields.hasErrors('maxInv')}" th:errors="*{maxInv}">Maximum Inventory Error</p>
 
+    <p th:if="${errorMessage}" th:text="${errorMessage}" style="color:red;"></p>
+
 <p><input type="submit" value="Submit" /></p>
 </form>
 <a href="http://localhost:8080/">Link

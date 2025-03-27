@@ -91,6 +91,13 @@ All work below was done in AddOutsourcedPartController.java:
 All work below was done in EnufPArtsValidator.java:
 * On lines 37-66, I added validation checks to ensure that part inventory does not fall below the minimum or exceed the maximum. If the inventory is outside the allowed range, an error message will populate. I also added a validator to ensure that updating products wouldn't cause parts to be outside the allowed range. If this happens, an error message will populate. 
 
+All work below was done in OutsourcedPartForm.html:
+* I've added the error message that displays when a part's inventory goes above the maximum allowed or below the minimum allowed on line 33.
+
+All work below was done in InhousePartForm.html:
+* I've added the error message that displays when a part's inventory goes above the maximum allowed or below the minimum allowed on line 30.
+
+
 ### **I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.**
 
 All work below was done in PartsTest.java:
