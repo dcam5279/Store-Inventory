@@ -34,6 +34,18 @@ public class EnufPartsValidator implements ConstraintValidator<ValidEnufParts, P
             Product myProduct = repo.findById((int) product.getId());
             for (Part p : myProduct.getParts()) {
 
+                Integer minInv = p.getMinInv();
+                Integer maxInv = p.getMaxInv();
+                Integer inv = p.getInv();
+
+                if (minInv == null || maxInv == null || inv == null) {
+                    constraintValidatorContext.disableDefaultConstraintViolation();
+                    constraintValidatorContext.buildConstraintViolationWithTemplate(
+                                    "Part '" + p.getName() + "' has missing inventory values (Min, Max, or Inventory is null).")
+                            .addConstraintViolation();
+                    return false;
+                }
+
                 if (p.getInv() < p.getMinInv()) {
                     constraintValidatorContext.disableDefaultConstraintViolation();
                     constraintValidatorContext.buildConstraintViolationWithTemplate(

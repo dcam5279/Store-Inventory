@@ -46,7 +46,7 @@ public abstract class Part implements Serializable {
     public Part() {
     }
 
-    public Part(String name, double price, int inv) {
+    public Part(String name, double price, int inv, int minInv, int maxInv) {
         this.name = name;
         this.price = price;
         this.inv = inv;
@@ -54,7 +54,7 @@ public abstract class Part implements Serializable {
         this.maxInv = maxInv;
     }
 
-    public Part(long id, String name, double price, int inv) {
+    public Part(long id, String name, double price, int inv, int minInv, int maxInv) {
         this.id = id;
         this.name = name;
         this.price = price;

@@ -53,6 +53,7 @@ All work below was done in Part.java:
 * On lines 50-51 and 59-60 created the constructors for minInt and maxInt.
 * On lines 95-109 created the getters and setters for min and max inventory. 
 * On lines 137-139 created boolean method to check validly of min and max inventory. 
+* On lines 41 and 47 initialized the int minInv and int maxInv.
 
 All work below was done in BootStrapData.java:
 * On lines 50-51, 61-62, 72-73, 83-84, and 94-95 set min and maximum inventory for each part. 
@@ -70,7 +71,7 @@ All work below was done in AddOutsourcedPartController.java:
 * On lines 48-51 added the minimum and maximum fields to the controller with error message using the isInvValid method.
 
 * Updated the database name in file explorer to The_Lawnmower_Shop and mapped it within the applications.properties file on line 6.
-
+* Added last name to line 6 of applications.properties as instructed by a course instructor. 
 
 
 ### **H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:** 
@@ -82,6 +83,7 @@ _•  Display error messages for low inventory when adding and updating parts if
 All work below was done in Part.java:
 * On lines 141-159 added a condition to validate that inventory is above the minimum and below the maximum allowed. If these values go below the minimum or below maximum an error message will populate. 
 
+
 All work below was done in AddInHousePartController.java:
 * On lines 52-57 added the validation method to the controller. 
 
@@ -89,7 +91,8 @@ All work below was done in AddOutsourcedPartController.java:
 * On lines 53-59 added the validation method to the controller. 
 
 All work below was done in EnufPArtsValidator.java:
-* On lines 37-66, I added validation checks to ensure that part inventory does not fall below the minimum or exceed the maximum. If the inventory is outside the allowed range, an error message will populate. I also added a validator to ensure that updating products wouldn't cause parts to be outside the allowed range. If this happens, an error message will populate. 
+* On lines 37-76, I added validation checks to ensure that part inventory does not fall below the minimum or exceed the maximum. If the inventory is outside the allowed range, an error message will populate. I also added a validator to ensure that updating products wouldn't cause parts to be outside the allowed range. If this happens, an error message will populate. I also added an error message for iff part returns a null value. 
+
 
 All work below was done in OutsourcedPartForm.html:
 * I've added the error message that displays when a part's inventory goes above the maximum allowed or below the minimum allowed on line 33.
