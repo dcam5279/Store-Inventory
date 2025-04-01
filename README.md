@@ -52,7 +52,7 @@ All work below was done in Part.java:
 * On lines 32-38 I created the error messages that inventory cannot be below 0. I initialized minInt and maxInt and mapped it to database.
 * On lines 50-51 and 59-60 created the constructors for minInt and maxInt.
 * On lines 95-109 created the getters and setters for min and max inventory. 
-* On lines 137-139 created boolean method to check validly of min and max inventory. 
+* On lines 166-170 created boolean method to check validly of min and max inventory. 
 * On lines 41 and 47 initialized the int minInv and int maxInv.
 
 All work below was done in BootStrapData.java:
@@ -81,14 +81,14 @@ _•  Display error messages for low inventory when adding and updating parts if
 •  Display error messages when adding and updating parts if the inventory is greater than the maximum._
 
 All work below was done in Part.java:
-* On lines 141-159 added a condition to validate that inventory is above the minimum and below the maximum allowed. If these values go below the minimum or below maximum an error message will populate. 
+* On lines 141-162 added a condition to validate that inventory is above the minimum and below the maximum allowed. If these values go below the minimum or below maximum an error message will populate. 
 
 
 All work below was done in AddInHousePartController.java:
-* On lines 52-57 added the validation method to the controller. 
+* On lines 45-61 added the validation method to the controller. 
 
 All work below was done in AddOutsourcedPartController.java:
-* On lines 53-59 added the validation method to the controller. 
+* On lines 48-62 added the validation method to the controller. 
 
 All work below was done in EnufPArtsValidator.java:
 * On lines 37-76, I added validation checks to ensure that part inventory does not fall below the minimum or exceed the maximum. If the inventory is outside the allowed range, an error message will populate. I also added a validator to ensure that updating products wouldn't cause parts to be outside the allowed range. If this happens, an error message will populate. I also added an error message for iff part returns a null value. 
@@ -112,7 +112,7 @@ All work below was done in PartsTest.java:
 
 ### **J.  Remove the class files for any unused validators in order to clean your code.**
 
-* The DeletePartValidator was the only validator that was unused so I deleted it from the project. 
+* The DeletePartValidator was the only validator that was unused, so I deleted it from the project. 
 
 
 ### **K.  Demonstrate professional communication in the content and presentation of your submission.**

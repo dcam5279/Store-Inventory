@@ -39,9 +39,9 @@ public abstract class Part implements Serializable {
 
 
     @ManyToMany
-    @JoinTable(name="product_part", joinColumns = @JoinColumn(name="part_id"),
-            inverseJoinColumns=@JoinColumn(name="product_id"))
-    Set<Product> products= new HashSet<>();
+    @JoinTable(name = "product_part", joinColumns = @JoinColumn(name = "part_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id"))
+    Set<Product> products = new HashSet<>();
 
     public Part() {
     }
@@ -119,9 +119,10 @@ public abstract class Part implements Serializable {
         this.products = products;
     }
 
-    public String toString(){
+    public String toString() {
         return this.name;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -140,6 +141,9 @@ public abstract class Part implements Serializable {
 
     public String validateInventory() {
 
+        if (minInv == null || maxInv == null) {
+            return "Inventory limits are not set properly!";
+        }
         if (inv < minInv) {
             return "Inventory is below the minimum allowed!";
         }
@@ -159,9 +163,11 @@ public abstract class Part implements Serializable {
     }
 
 
-
-
     public boolean isInvValid() {
+        if (minInv == null || maxInv == null) {
+            return false;
+        }
         return inv >= minInv && inv <= maxInv;
     }
+
 }

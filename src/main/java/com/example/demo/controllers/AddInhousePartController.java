@@ -44,6 +44,10 @@ public class AddInhousePartController{
         }
         else{
 
+            if (part.getMinInv() == null || part.getMaxInv() == null) {
+                theModel.addAttribute("errorMessage", "Minimum and Maximum inventory values cannot be null.");
+                return "InhousePartForm";
+            }
             if (!part.isInvValid()) {
                 theModel.addAttribute("errorMessage", "Inventory must be between the minimum and maximum values.");
                 return "InhousePartForm";
