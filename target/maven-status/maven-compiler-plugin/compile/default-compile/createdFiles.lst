@@ -17,7 +17,6 @@ com\example\demo\controllers\AddPartController.class
 com\example\demo\repositories\InhousePartRepository.class
 com\example\demo\service\OutsourcedPartService.class
 com\example\demo\service\ProductService.class
-com\example\demo\validators\DeletePartValidator.class
 com\example\demo\bootstrap\BootStrapData.class
 com\example\demo\validators\EnufPartsValidator.class
 com\example\demo\domain\InhousePart.class

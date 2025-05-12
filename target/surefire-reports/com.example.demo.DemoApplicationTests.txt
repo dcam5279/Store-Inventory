@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.DemoApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.788 s <<< FAILURE! - in com.example.demo.DemoApplicationTests
-contextLoads  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
-Caused by: org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select part0_.id as id2_0_, part0_.inv as inv3_0_, part0_.max_inv as max_inv4_0_, part0_.min_inv as min_inv5_0_, part0_.name as name6_0_, part0_.price as price7_0_, part0_.part_id as part_id8_0_, part0_.company_name as company_9_0_, part0_.part_type as part_typ1_0_ from parts part0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
-Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
-Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
-Column "PART0_.MAX_INV" not found; SQL statement:
-select part0_.id as id2_0_, part0_.inv as inv3_0_, part0_.max_inv as max_inv4_0_, part0_.min_inv as min_inv5_0_, part0_.name as name6_0_, part0_.price as price7_0_, part0_.part_id as part_id8_0_, part0_.company_name as company_9_0_, part0_.part_type as part_typ1_0_ from parts part0_ [42122-200]
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.786 s - in com.example.demo.DemoApplicationTests
