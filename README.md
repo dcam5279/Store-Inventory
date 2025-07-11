@@ -1,5 +1,3 @@
-# **WGU D287: Java Frameworks**
-
 ### **C. Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.**
 
 _Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required._
@@ -113,6 +111,3 @@ All work below was done in PartsTest.java:
 ### **J.  Remove the class files for any unused validators in order to clean your code.**
 
 * The DeletePartValidator was the only validator that was unused, so I deleted it from the project. 
-
-
-### **K.  Demonstrate professional communication in the content and presentation of your submission.**
